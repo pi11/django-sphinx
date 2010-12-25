@@ -470,7 +470,8 @@ class SphinxQuerySet(object):
                                 value -= (1.0/MAX_INT)
                             else:
                                 value -= 1
-                        _max = -MAX_INT
+
+                        _max = 0#-MAX_INT
                         if is_float:
                             _max = float(_max)
                         args = (name, _max, value, exclude)
