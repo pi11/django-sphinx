@@ -1,5 +1,6 @@
 from django.contrib.admin.views.main import *
 from django.contrib.admin import ModelAdmin
+from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from djangosphinx.models import SphinxQuerySet
 
 class SphinxModelAdmin(ModelAdmin):
